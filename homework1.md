@@ -4,4 +4,4 @@
 ## Research (1_R)
 
 ## Application (1_A)
-[Press here](https://bynickes.github.io/StatisticsHomeworks/homework1) to download the zip that contains the application.
+**[Press here](https://drive.google.com/file/d/146lz_b4jEahGEgQvEOlwN5E4a-8d3i3q/view?usp=sharing)** to download the zip that contains the application.
