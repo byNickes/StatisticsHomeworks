@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+# Statistics' homeworks of Nicolò Baroncini (1834907)
+
+## Homework 1
 
 You can use the [editor on GitHub](https://github.com/byNickes/StatisticsHomeworks/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
