@@ -8,5 +8,5 @@
 The animation has been made using a timer to trigger an event at each tick (one every 20 ms) of which the handler increases or decreases both x and y position of the two balls. If the ball touches one of the edges the movements inverts.
 Talking about the text appearing pressing a button has been used an event handler that triggers when "Show text" button is pressed.
 A video of the application working can be watched down below:
-https://user-images.githubusercontent.com/78324346/134811023-4a7254fa-e802-407f-a452-38fb18cd5215.mp4
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ok7o9mXSeFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
