@@ -10,7 +10,7 @@ Statistics is more a tool for science than science itself. In fact, statistics h
 ## Application (1_A)
 **[Press here](https://drive.google.com/file/d/146lz_b4jEahGEgQvEOlwN5E4a-8d3i3q/view?usp=sharing)** to download the zip that contains the application.
 
-The animation has been made using a timer to trigger an event at each tick (one every 20 ms). When the timer timeouts, the handler increases or decreases both x and y position of the two balls. If the ball touches one of the edges the movements inverts.
+The animation has been made using a timer to trigger an event at each tick (one every 20 ms). When the timer timeouts, the handler increases or decreases both x and y position of the two balls. If the ball touches one of the edges the movement inverts.
 Talking about the text appearing pressing a button, to make it has been used an event handler that triggers when "Show text" button is pressed.
 A video of the application running can be watched down below:
 
