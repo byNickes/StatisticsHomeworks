@@ -32,7 +32,7 @@ For example this instruction\
 will return true because of the rounding of the mantissa.
 
 ##### 3. Propagation errors
-These errors are made when computing real numbers.
+These errors are made when computing real numbers. For example if we have 100000 as mantissa which is made by 6 digits and we want to add 1 to it we will extend the mantisse to the length of registers, usually 32 or 64 bits. This means that we will have 100000 as first 6 most significant bits and then everything will be 0. If we add 1 to position 0 then we will never see any difference in floating point representantion, even if we add 1 to the mantissa forever. 
 
 ##### 4. Loss of significance errors
 
