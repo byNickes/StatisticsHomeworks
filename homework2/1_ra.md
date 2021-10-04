@@ -5,21 +5,23 @@
 
 #### How does it work?
 Mostly used floating point standard is IEEE754. A real number is represented by a couple of values: \
-(m, e) \
+```
+(m, e)
+```
 Where: \
-1- m: mantissa \
-2- e: exponent \
+***1-*** m: mantissa \
+***2-*** e: exponent \
 To get the real number by this couple is used the following formula: \
 ```
-n = m*2ᵉ \
+n = m*2ᵉ 
 ```
 The bit representation of floating numbers in IEEE754 standard is as following:
 ![Single-Precision-IEEE-754-Floating-Point-Standard](https://user-images.githubusercontent.com/78324346/135763086-01f79db7-b86b-489c-9d6c-614fab795b82.jpg) \
 As it's possible to see, in this standard also a sign bit is available: if it is 1 then the number is negative, otherwise positive.\
 Special number values have a specific representation:\
-1- Zero is encoded with both exponent and mantissa as zero \
-2- Infinity is represented as all ones in the exponent bits and all zeros in mantissa \
-3- Not a Number (NaN) is represented using an all ones exponent and a non-zero mantissa
+***1-*** Zero is encoded with both exponent and mantissa as zero \
+***2-*** Infinity is represented as all ones in the exponent bits and all zeros in mantissa \
+***3-*** Not a Number (NaN) is represented using an all ones exponent and a non-zero mantissa
 
 #### Problems of floating point numbers
 We are trying to represent an infinite set of numbers using a finite numbers of bits. This brings errors that need to be accounted for when programming, since they will bring some, apparently, questionable errors.
