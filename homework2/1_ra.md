@@ -11,7 +11,7 @@ Mostly used floating point standard is IEEE754. A real number is represented by 
 Where: \
 ***1-*** m: mantissa \
 ***2-*** e: exponent \
-To get the real number by this couple is used the following formula: \
+To get the real number by this couple is used the following formula: 
 ```
 n = m*2ᵉ 
 ```
@@ -33,7 +33,7 @@ From this example is possible to understand that bigger the real number, bigger 
 
 ##### 2. Comparison errors
 This error is related to a rounding error. It could happen that two different real numbers are seen equal by the computer.
-For example this instruction\
+For example this instruction
 ```
 1.999999999999999999999>=2
 ```
