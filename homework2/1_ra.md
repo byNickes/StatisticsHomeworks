@@ -21,10 +21,12 @@ Special number values have a specific representation:\
 
 #### Problems of floating point numbers
 We are trying to represent an infinite set of numbers using a finite numbers of bits. This brings errors that need to be accounted for when programming, since they will bring some, apparently, questionable errors.
+
 ##### 1. Rounding errors
 As said, we have a limited number of digits to represent all real numbers, this brings some inaccuracy. When there are more digits needed to represent a real number than the format allows, the leftover ones are omitted, this means that the number is rounded.\
 Let's see an example of this error with a floating point standard that has the mantissa made by 3 bits. In this case, if we have two real numbers with mantissa 1000 and 1001, they will be both represented by 100 mantissa, so, if the exponent is equal between the two they will figure as equal. \
 From this example is possible to understand that bigger the real number, bigger the interval between a real number and another. That is because if we have 3 bits mantissa allowed and 5 bits for the mantissa of the number that I have to represent then I'll have that from 10000 and 10011 they will look the same since bit 0 and bit 1 will be rounded.
+
 ##### 2. Comparison errors
 This error is related to a rounding error. It could happen that two different real numbers are seen equal by the computer.
 For example this instruction\
@@ -35,9 +37,14 @@ will return true because of the rounding of the mantissa.
 These errors are made when computing real numbers. For example if we have 100000 as mantissa which is made by 6 digits and we want to add 1 to it we will extend the mantisse to the length of registers, usually 32 or 64 bits. This means that we will have 100000 as first 6 most significant bits and then everything will be 0. If we add 1 to position 0 then we will never see any difference in floating point representantion, even if we add 1 to the mantissa forever. 
 
 ##### 4. Loss of significance errors
+This kind of error is possible to be seen easily with decimal numbers. \
+Imagine to have two real numbers:
+x = 0.1234567891234567890 \
+y = 0.1234567890 \
+Then computing the subtraction x - y will give us 0.0000000001 as result since we can only represent 10 decimal digits. This means that we lost the information that shows that x and y are distant more than 0.0000000001.
 
-##### 5. Cancellation errors
 *References:* \
 [1] [https://www.geeksforgeeks.org/ieee-standard-754-floating-point-numbers/](https://www.geeksforgeeks.org/ieee-standard-754-floating-point-numbers/) \
 [2] [https://en.wikipedia.org/wiki/Floating-point_arithmetic](https://en.wikipedia.org/wiki/Floating-point_arithmetic) \
-[3] [https://docs.oracle.com/cd/E19957-01/806-3568/ncg_math.html](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_math.html) 
+[3] [https://docs.oracle.com/cd/E19957-01/806-3568/ncg_math.html](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_math.html) \
+[4] [https://en.wikipedia.org/wiki/Loss_of_significance](https://en.wikipedia.org/wiki/Loss_of_significance) 
