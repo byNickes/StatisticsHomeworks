@@ -10,7 +10,9 @@ Where: \
 1- m: mantissa \
 2- e: exponent \
 To get the real number by this couple is used the following formula: \
-n = m*2^e \
+```
+n = m*2ᵉ \
+```
 The bit representation of floating numbers in IEEE754 standard is as following:
 ![Single-Precision-IEEE-754-Floating-Point-Standard](https://user-images.githubusercontent.com/78324346/135763086-01f79db7-b86b-489c-9d6c-614fab795b82.jpg) \
 As it's possible to see, in this standard also a sign bit is available: if it is 1 then the number is negative, otherwise positive.\
@@ -30,7 +32,9 @@ From this example is possible to understand that bigger the real number, bigger 
 ##### 2. Comparison errors
 This error is related to a rounding error. It could happen that two different real numbers are seen equal by the computer.
 For example this instruction\
-1.999999999999999999999>=2\
+```
+1.999999999999999999999>=2
+```
 will return true because of the rounding of the mantissa.
 
 ##### 3. Propagation errors
@@ -39,8 +43,10 @@ These errors are made when computing real numbers. For example if we have 100000
 ##### 4. Loss of significance errors
 This kind of error is possible to be seen easily with decimal numbers. \
 Imagine to have two real numbers: \
-x = 0.1234567891234567890 \
-y = 0.1234567890 \
+```
+x = 0.1234567891234567890 
+y = 0.1234567890 
+```
 Then computing the subtraction x - y will give us 0.0000000001 as result since we can only represent 10 decimal digits. This means that we lost the information that shows that x and y are distant more than 0.0000000001.
 
 *References:* \
