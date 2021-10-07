@@ -4,7 +4,7 @@
 ### Understand how the floating point representation works and describe systematically (possibly using categories) all the possible problems that can happen. Try to classify the various issues and limitations (representation, comparison, rounding, propagation, approximation, loss of significance, cancellation, etc.) and provide simple examples for each of the categories you have identified.
 
 #### How does it work?
-Mostly used floating point standard is IEEE754. A real number is represented by a couple of values: \
+Mostly used floating point standard is IEEE754. A real number is represented by a couple of values:
 ```
 (m, e)
 ```
