@@ -24,5 +24,5 @@ Typography is concerned with the display of text in a variety of fonts, sizes, a
 
 [1] [https://en.wikipedia.org/wiki/Graphics_Device_Interface](https://en.wikipedia.org/wiki/Graphics_Device_Interface) \
 [2] [https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start](https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-gdi-start) \
-[3] [https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-the-three-parts-of-gdi--about](https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-the-three-parts-of-gdi--about)
+[3] [https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-the-three-parts-of-gdi--about](https://docs.microsoft.com/en-us/windows/win32/gdiplus/-gdiplus-the-three-parts-of-gdi--about) \
 [4] [https://docs.microsoft.com/it-it/dotnet/api/system.drawing.graphics?view=windowsdesktop-5.0](https://docs.microsoft.com/it-it/dotnet/api/system.drawing.graphics?view=windowsdesktop-5.0)
