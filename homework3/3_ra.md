@@ -24,7 +24,7 @@ The next table shows the draw methods available:
 
 ![Schermata 2021-10-13 alle 16 55 59](https://user-images.githubusercontent.com/78324346/137158837-f1ea08d0-cb64-4adb-8e54-71999814f94e.png)
 
-***Fill methods*** are used to fill the interior of graphics shapes. You can fill only certain graphics shapes; hence there are only a few Fill methods available in the Graphics class.\
+***Fill methods*** are used to fill the interior of graphics shapes. You can fill only certain graphics shapes, hence, there are only a few Fill methods available in the Graphics class.\
 The following table shows the fill methods available in GDI+:
 ![Schermata 2021-10-13 alle 17 06 03](https://user-images.githubusercontent.com/78324346/137160721-36790a92-0db8-416a-b23b-1b368e729f8e.png)
 
