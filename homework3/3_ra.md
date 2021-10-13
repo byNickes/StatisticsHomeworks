@@ -14,7 +14,7 @@ Vector graphics involves drawing primitives (such as lines, curves, and figures)
 GDI+ provides classes that store information about the primitives themselves, classes that store information about how the primitives are to be drawn, and classes that actually do the drawing.
 
 In this category falls the class ***Graphics*** which has methods for drawing lines, rectangles, paths, and other figures. It encapsulates a GDI+ drawing surface, which can be a Bitmap or a Image object, where the figures are drawn. The drawing surface can be then associated to an image container, like a PictureBox, to display the drawing.\
-We can divide Graphics class methods into three categories: draw, fill, and miscellaneous. Draw methods are used to draw lines, curves, and outer boundaries of closed curves and images. Fill methods fill the interior area of graphics objects. There are also a few miscellaneous methods that fall in neither category-for example, MeasureString and Clear.
+We can divide Graphics class methods into three categories: draw and fill. Draw methods are used to draw lines, curves, and outer boundaries of closed curves and images. Fill methods fill the interior area of graphics objects.
 
 First let's see the attributes of the Graphics class:\
 ![Schermata 2021-10-13 alle 17 09 59](https://user-images.githubusercontent.com/78324346/137161593-e5774d05-374f-451d-af96-ba2520198be5.png)
