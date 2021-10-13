@@ -9,22 +9,22 @@ The services of Windows GDI+ fall into the following three broad categories:
 • ***Imaging***\
 • ***Typography***
 
-We are now interested in ****2-D vector graphics**** since it contains the Graphics class.\
+We are now interested in ***2-D vector graphics*** since it contains the Graphics class.\
 Vector graphics involves drawing primitives (such as lines, curves, and figures) that are specified by sets of points on a coordinate system. For example, a straight line can be specified by its two endpoints, and a rectangle can be specified by a point giving the location of its upper-left corner and a pair of numbers giving its width and height. A simple path can be specified by an array of points to be connected by straight lines.\
 GDI+ provides classes that store information about the primitives themselves, classes that store information about how the primitives are to be drawn, and classes that actually do the drawing.
 
-In this category falls the class ****Graphics**** which has methods for drawing lines, rectangles, paths, and other figures. It encapsulates a GDI+ drawing surface, which can be a Bitmap or a Image object, where the figures are drawn. The drawing surface can be then associated to an image container, like a PictureBox, to display the drawing.\
+In this category falls the class ***Graphics*** which has methods for drawing lines, rectangles, paths, and other figures. It encapsulates a GDI+ drawing surface, which can be a Bitmap or a Image object, where the figures are drawn. The drawing surface can be then associated to an image container, like a PictureBox, to display the drawing.\
 We can divide Graphics class methods into three categories: draw, fill, and miscellaneous. Draw methods are used to draw lines, curves, and outer boundaries of closed curves and images. Fill methods fill the interior area of graphics objects. There are also a few miscellaneous methods that fall in neither category-for example, MeasureString and Clear.
 
 First let's see the attributes of the Graphics class:\
 ![Schermata 2021-10-13 alle 17 09 59](https://user-images.githubusercontent.com/78324346/137161593-e5774d05-374f-451d-af96-ba2520198be5.png)
 
-****Draw methods**** of the Graphics class are used to draw lines, curves, and outer boundaries of closed curves and images. \
+***Draw methods*** of the Graphics class are used to draw lines, curves, and outer boundaries of closed curves and images. \
 The next table shows the draw methods available:
 
 ![Schermata 2021-10-13 alle 16 55 59](https://user-images.githubusercontent.com/78324346/137158837-f1ea08d0-cb64-4adb-8e54-71999814f94e.png)
 
-****Fill methods**** are used to fill the interior of graphics shapes. You can fill only certain graphics shapes; hence there are only a few Fill methods available in the Graphics class.\
+***Fill methods*** are used to fill the interior of graphics shapes. You can fill only certain graphics shapes; hence there are only a few Fill methods available in the Graphics class.\
 The following table shows the fill methods available in GDI+:
 ![Schermata 2021-10-13 alle 17 06 03](https://user-images.githubusercontent.com/78324346/137160721-36790a92-0db8-416a-b23b-1b368e729f8e.png)
 
