@@ -4,4 +4,4 @@
 ### Do a personal research about the real world window to viewport transformation, and note separately the formulas and code which can be useful for your present and future applications.
 
 
-[1] [https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/line-lineaire/5214824-eng.htm](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch9/line-lineaire/5214824-eng.htm)
+[1] [https://www.geeksforgeeks.org/window-to-viewport-transformation-in-computer-graphics-with-implementation/](https://www.geeksforgeeks.org/window-to-viewport-transformation-in-computer-graphics-with-implementation/)
