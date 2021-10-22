@@ -24,6 +24,27 @@ We want to calculate the coordinate (xᵥ,yᵥ) and to do so can be followed the
 
 ![Foglio di brutta-4](https://user-images.githubusercontent.com/78324346/138499181-ad596cd4-0f95-4ad1-bc78-975a99d41d43.jpg)
 
-Let's see now the code useful to our applications.
+What seen in a mathematical way can be written in code as shown in the next block of code. \
+The object "r" is the viewport in which we want to represent a point represented by (X_World, Y_World). The variables MinX, MaxX, MinY and MaxY are defined as their homonyms above. In this case the values accepted range from 0 to 250 for both X and Y. \
+The two functions apply to a value, represented in the real world window, the trasformation to represent it in the viewport. There is one function for the X-axis values and one for Y-axis value.
+
+{% highlight C# %}
+public int MinX = 0;
+public int MaxX = 250;
+public int MinY = 0;
+public int MaxY = 250;
+int RangeX = MaxX - MinX;
+int RangeY = MaxY - MinY;
+        
+int X_Viewport(double X_World)
+{
+    return (int)(r.Left + r.Width * (X_World - MinX_Window) / RangeX);
+}
+
+int Y_Viewport(double Y_World)
+{
+    return (int)(r.Top + mv_r.r.Height - r.Height * (Y_World - MinY_Window)/RangeY);
+}
+{% endhighlight %}
 
 [1] [https://www.geeksforgeeks.org/window-to-viewport-transformation-in-computer-graphics-with-implementation/](https://www.geeksforgeeks.org/window-to-viewport-transformation-in-computer-graphics-with-implementation/)
