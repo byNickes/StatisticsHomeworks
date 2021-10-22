@@ -17,9 +17,13 @@ Let's see now some general terms tipically used when talking about world window 
 It may be possible that the size of the Viewport is much smaller or greater than the Window. In these cases, we have to increase or decrease the size of the Window according to the Viewport and for this, we need some mathematical calculations.
 We define:
 ```
-(xw, yw) as a point in the World Window
-(xv, yv) as the corresponding  point in the associated Viewport
+(xբ, yբ) as a point in the World Window
+(xᵥ, yᵥ) as the corresponding  point in the associated Viewport
 ```
-We wantto calculate the coordinate (xv,yv)
+We want to calculate the coordinate (xᵥ,yᵥ) and to do so can be followed the procedure below.
+
+![Foglio di brutta-4](https://user-images.githubusercontent.com/78324346/138499181-ad596cd4-0f95-4ad1-bc78-975a99d41d43.jpg)
+
+Let's see now the code useful to our applications.
 
 [1] [https://www.geeksforgeeks.org/window-to-viewport-transformation-in-computer-graphics-with-implementation/](https://www.geeksforgeeks.org/window-to-viewport-transformation-in-computer-graphics-with-implementation/)
