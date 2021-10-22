@@ -26,7 +26,7 @@ We want to calculate the coordinate (xᵥ,yᵥ) and to do so can be followed the
 
 What seen in a mathematical way can be written in code as shown in the next block of code. \
 The object "r" is the viewport in which we want to represent a point represented by (X_World, Y_World). The variables MinX, MaxX, MinY and MaxY are defined as their homonyms above. In this case the values accepted range from 0 to 250 for both X and Y. \
-The two functions apply to a value, represented in the real world window, the trasformation to represent it in the viewport. There is one function for the X-axis values and one for Y-axis value.
+The two functions apply to a value, represented in the real world window, the trasformation to represent it in the viewport. There is one function for the X-axis values and one for Y-axis values.
 
 {% highlight C# %}
 public int MinX = 0;
