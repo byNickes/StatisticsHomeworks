@@ -12,7 +12,7 @@ Let's see now some general terms tipically used when talking about world window 
 • ***World Coordinate –*** It is the Cartesian coordinate that we want to represent in the viewport. \
 • ***Device Coordinate –*** It is the screen coordinate where the objects are to be displayed, so at any world coordinate is associated a device coordinate. \
 • ***Window –*** It is the area on world coordinate selected for display.\
-• ***ViewPort –*** It is the area on the device coordinate where graphics is to be displayed.\
+• ***ViewPort –*** It is the area on the device coordinate where graphics is to be displayed.
 
 It may be possible that the size of the viewport is much smaller or greater than the window. In these cases, we have to correctly positionate any value according to the dimension of the viewport. The main goal is to keep the same proportion between the values represented. To achieve so we need some mathematical calculations.
 We define:
