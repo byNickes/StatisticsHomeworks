@@ -23,7 +23,7 @@ The  Bernoulli distribution is the discrete probability distribution of a random
 The PDF of this distribution is the following:\
 ![image](https://user-images.githubusercontent.com/78324346/139028179-69e1f5c2-ca26-47ee-9997-c558b4d7097b.png)
 The parameters of this distribution are: \
-Ω = {0,1}, k ∈ Ω
+Ω = {0,1}, k ∈ Ω \
 p = Probability of k=1 (0 ≤ p ≤ 1)
 
 The formula of the PDF is
@@ -41,28 +41,38 @@ if(u <= p) return 0;
 else return 1;
 ```
 • ***Binomial distribution*** \
-The Binomial distribution, with parameters n and p, is the discrete probability distribution of the number of successes in a sequence of n independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success (with probability p) or failure (with probability q = 1 − p). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment.
+The Binomial distribution, with parameters n and p, is the discrete probability distribution of the number of successes in a sequence of n independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success (with probability p) or failure (with probability q = 1 − p). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment.\
+The PDF of this distribution is the following:\
+![image](https://user-images.githubusercontent.com/78324346/139126221-22b8c52c-f30b-48af-9572-75127caf49dc.png)
 
+The PDF of this distribution is the following:\
 The parameters of this distributions are:\
-Ω = {0,1, ...., n}, x ∈ Ω
-p = Probability of success in a trial, 0 < p < 1.
-n = Number of trials, n must be a positive integer.
+Ω = {0,1, ...., n}, x ∈ Ω \
+p = Probability of success in a trial, 0 < p < 1\
+n = Number of trials, n must be a positive integer\
 
 To generate this distribution can be used the inverse transformation method. \
-Compute the CDF F(x) for x = 0, 1, 2, . . ., n and store in an array. For each binomial variate, generate a U(0,1) variate u and search the array to find x so that F(x) ≤ u < F(x + 1) and finally return x.
+Compute the CDF F(x) for x = 0, 1, 2, . . ., n and store in an array. For each binomial variate, generate a U(0,1) variate u and search the array to find x so that F(x) ≤ u < F(x + 1) and finally return x. \
+The formula of the CDF needed for this algorithm is \
+![image](https://user-images.githubusercontent.com/78324346/139125527-69d13ac5-a890-40ab-a354-6bf086d6e104.png)
 
-• ***Poisson binomial distribution***\
+• ***Poisson distribution***\
 The Poisson binomial distribution is the discrete probability distribution of a sum of independent Bernoulli trials that are not necessarily identically distributed.
 
 The parameter of this distribution are:
  Ω = {0, 1, 2, . . . , ∞}, x ∈ Ω, λ = Mean (λ > 0)
+The PDF of this distribution is the following:\
+![image](https://user-images.githubusercontent.com/78324346/139126314-e5475652-2781-4bc4-8752-e4ddf763888f.png)
 
 The formula of the PDF is:
 
  ![image](https://user-images.githubusercontent.com/78324346/139025878-f632f54a-20e2-4176-a68a-8c9a676557af.png)
 
 To generate this distribution can be used the inverse transformation method. \
-Compute the CDF F(x) for x = 0, 1, 2, . . . up to a suitable cutoff and store in an array. For each Poisson random variable, generate a u = U(0,1), and search the array to find x such that F(x) ≤ u < F(x + 1), then return x.
+Compute the CDF F(x) for x = 0, 1, 2, . . . up to a suitable cutoff and store in an array. For each Poisson random variable, generate a u = U(0,1), and search the array to find x such that F(x) ≤ u < F(x + 1), then return x. \
+The formula of the CDF needed for this algorithm is\
+![image](https://user-images.githubusercontent.com/78324346/139126071-05e878eb-8016-4b64-9431-8c2820c65611.png)
+
 
 #### Continuous distributions
 
