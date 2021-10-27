@@ -8,7 +8,9 @@
 • ***Discrete uniform distribution***\
 The discrete uniform distribution is a symmetric probability distribution wherein a finite number of values are equally likely to be observed. Every one of n values has equal probability 1/n. \
 The PDF of this distribution is the following: \
+
 ![image](https://user-images.githubusercontent.com/78324346/139026894-e3bddbfa-6f64-443f-b093-523109deb838.png)
+
 The parameters of this distribution are:\
 a,b integers with b ≥ a, n = b-a+1
 
@@ -19,9 +21,11 @@ The formula of the PDF is, ∀ x ∈ [a,b], the following
 To generate a random number from the discrete uniform distribution, one can draw a random number R from the U(0, 1) distribution, calculate S = (n + 1)R, and take the integer part of S as the draw from the discrete uniform distribution. 
 
 • ***Bernoulli distribution*** \
-The  Bernoulli distribution is the discrete probability distribution of a random variable which takes the value 1 with probability p and the value 0 with probability q = 1-p.
-The PDF of this distribution is the following:\
+The  Bernoulli distribution is the discrete probability distribution of a random variable which takes the value 1 with probability p and the value 0 with probability q = 1-p. \
+The PDF of this distribution is the following:
+
 ![image](https://user-images.githubusercontent.com/78324346/139028179-69e1f5c2-ca26-47ee-9997-c558b4d7097b.png)
+
 The parameters of this distribution are: \
 Ω = {0,1}, k ∈ Ω \
 p = Probability of k=1 (0 ≤ p ≤ 1)
@@ -42,10 +46,10 @@ else return 1;
 ```
 • ***Binomial distribution*** \
 The Binomial distribution, with parameters n and p, is the discrete probability distribution of the number of successes in a sequence of n independent experiments, each asking a yes–no question, and each with its own Boolean-valued outcome: success (with probability p) or failure (with probability q = 1 − p). A single success/failure experiment is also called a Bernoulli trial or Bernoulli experiment.\
-The PDF of this distribution is the following:\
+The PDF of this distribution is the following:
+
 ![image](https://user-images.githubusercontent.com/78324346/139126221-22b8c52c-f30b-48af-9572-75127caf49dc.png)
 
-The PDF of this distribution is the following:\
 The parameters of this distributions are:\
 Ω = {0,1, ...., n}, x ∈ Ω \
 p = Probability of success in a trial, 0 < p < 1\
@@ -59,9 +63,10 @@ The formula of the CDF needed for this algorithm is \
 • ***Poisson distribution***\
 The Poisson binomial distribution is the discrete probability distribution of a sum of independent Bernoulli trials that are not necessarily identically distributed.
 
-The parameter of this distribution are:
- Ω = {0, 1, 2, . . . , ∞}, x ∈ Ω, λ = Mean (λ > 0)
-The PDF of this distribution is the following:\
+The parameter of this distribution are: \
+ Ω = {0, 1, 2, . . . , ∞}, x ∈ Ω, λ = Mean (λ > 0) \
+The PDF of this distribution is the following:
+
 ![image](https://user-images.githubusercontent.com/78324346/139126314-e5475652-2781-4bc4-8752-e4ddf763888f.png)
 
 The formula of the PDF is:
