@@ -9,7 +9,8 @@
 The discrete uniform distribution is a symmetric probability distribution wherein a finite number of values are equally likely to be observed. Every one of n values has equal probability 1/n. \
 The PDF of this distribution is the following: \
 ![image](https://user-images.githubusercontent.com/78324346/139026894-e3bddbfa-6f64-443f-b093-523109deb838.png)
-The parameters of this distribution are:
+The parameters of this distribution are: \
+
 a,b integers with b ≥ a, n = b-a+1 \
 The formula of the PDF is ∀ x ∈ [a,b]
 
