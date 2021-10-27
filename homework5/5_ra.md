@@ -64,6 +64,18 @@ The formula of the PDF is:
 To generate this distribution can be used the inverse transformation method. \
 Compute the CDF F(x) for x = 0, 1, 2, . . . up to a suitable cutoff and store in an array. For each Poisson random variable, generate a u = U(0,1), and search the array to find x such that F(x) ≤ u < F(x + 1), then return x.
 
+#### Continuous distributions
+
+• ***Gamma distribution*** \
+
+• ***Beta distribution*** \
+
+• ***Uniform distribution*** \
+
+• ***Exponential distribution*** \
+
+• ***Normal distribution*** \
+
 [1][https://www.cse.wustl.edu/~jain/books/ftp/ch5f_slides.pdf](https://www.cse.wustl.edu/~jain/books/ftp/ch5f_slides.pdf) \
 [2][https://en.wikipedia.org/wiki/Bernoulli_distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) \
 [3][https://en.wikipedia.org/wiki/Binomial_distribution](https://en.wikipedia.org/wiki/Binomial_distribution)\
