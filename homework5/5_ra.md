@@ -12,9 +12,9 @@ The PDF of this distribution is the following: \
 The parameters of this distribution are: \
 
 a,b integers with b ≥ a, n = b-a+1 \
-The formula of the PDF is ∀ x ∈ [a,b]
+The formula of the PDF is
 
-![image](https://user-images.githubusercontent.com/78324346/139027185-a4780ebe-7c1c-4b79-a5e8-cd260aaf0084.png) 
+![image](https://user-images.githubusercontent.com/78324346/139027185-a4780ebe-7c1c-4b79-a5e8-cd260aaf0084.png) ∀ x ∈ [a,b]
 
 To generate a random number from the discrete uniform distribution, one can draw a random number R from the U(0, 1) distribution, calculate S = (n + 1)R, and take the integer part of S as the draw from the discrete uniform distribution. 
 
