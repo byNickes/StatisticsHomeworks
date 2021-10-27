@@ -11,9 +11,9 @@ The PDF of this distribution is the following: \
 ![image](https://user-images.githubusercontent.com/78324346/139026894-e3bddbfa-6f64-443f-b093-523109deb838.png)
 The parameters of this distribution are:
 a,b integers with b ≥ a, n = b-a+1 \
-The formula of the PDF is 
+The formula of the PDF is ∀ x ∈ [a,b]
 
-![image](https://user-images.githubusercontent.com/78324346/139027185-a4780ebe-7c1c-4b79-a5e8-cd260aaf0084.png)
+![image](https://user-images.githubusercontent.com/78324346/139027185-a4780ebe-7c1c-4b79-a5e8-cd260aaf0084.png) 
 
 To generate a random number from the discrete uniform distribution, one can draw a random number R from the U(0, 1) distribution, calculate S = (n + 1)R, and take the integer part of S as the draw from the discrete uniform distribution. 
 
@@ -22,11 +22,12 @@ The  Bernoulli distribution is the discrete probability distribution of a random
 The PDF of this distribution is the following:\
 ![image](https://user-images.githubusercontent.com/78324346/139028179-69e1f5c2-ca26-47ee-9997-c558b4d7097b.png)
 The formula of the PDF is
+
+![image](https://user-images.githubusercontent.com/78324346/139028670-0b747696-9adf-4814-ba2a-270ebe6ce7b4.png)
+
 The parameters of this distribution are:
 Ω = {0,1}, k ∈ Ω
 p = Probability of k=1 (0 ≤ p ≤ 1)
-
-![image](https://user-images.githubusercontent.com/78324346/139028670-0b747696-9adf-4814-ba2a-270ebe6ce7b4.png)
 
 To generate this distribution can be used the inverse trasformation generating u = U(0,1) and if u ≤ p then return 0, otherwise return 1.
 A possible code to generate a random value from the Bernoulli distribution could be the one below.
