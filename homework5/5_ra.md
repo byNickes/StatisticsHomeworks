@@ -5,7 +5,7 @@
 
 #### Discrete distributions
 
-• ***Discrete uniform distribution***
+• ***Discrete uniform distribution***\
 The discrete uniform distribution is a symmetric probability distribution wherein a finite number of values are equally likely to be observed. Every one of n values has equal probability 1/n. \
 The PDF of this distribution is the following: \
 ![image](https://user-images.githubusercontent.com/78324346/139026894-e3bddbfa-6f64-443f-b093-523109deb838.png)
@@ -49,7 +49,7 @@ n = Number of trials, n must be a positive integer.
 To generate this distribution can be used the inverse transformation method. \
 Compute the CDF F(x) for x = 0, 1, 2, . . ., n and store in an array. For each binomial variate, generate a U(0,1) variate u and search the array to find x so that F(x) ≤ u < F(x + 1) and finally return x.
 
-• ***Poisson binomial distribution***
+• ***Poisson binomial distribution***\
 The Poisson binomial distribution is the discrete probability distribution of a sum of independent Bernoulli trials that are not necessarily identically distributed.
 
 The parameter of this distribution are:
