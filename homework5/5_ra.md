@@ -7,16 +7,16 @@
 
 • ***Discrete uniform distribution***\
 The discrete uniform distribution is a symmetric probability distribution wherein a finite number of values are equally likely to be observed. Every one of n values has equal probability 1/n. \
-The PDF of this distribution is the following: \
+The PDF of this distribution is the following: 
 
 ![image](https://user-images.githubusercontent.com/78324346/139026894-e3bddbfa-6f64-443f-b093-523109deb838.png)
 
 The parameters of this distribution are:\
 a,b integers with b ≥ a, n = b-a+1
 
-The formula of the PDF is, ∀ x ∈ [a,b], the following
+The formula of the PDF is the following
 
-![image](https://user-images.githubusercontent.com/78324346/139027185-a4780ebe-7c1c-4b79-a5e8-cd260aaf0084.png) 
+![image](https://user-images.githubusercontent.com/78324346/139200645-c0be2742-2383-4b64-8608-db64abae777b.png)
 
 To generate a random number from the discrete uniform distribution, one can draw a random number R from the U(0, 1) distribution, calculate S = (n + 1)R, and take the integer part of S as the draw from the discrete uniform distribution. 
 
@@ -30,10 +30,9 @@ The parameters of this distribution are: \
 Ω = {0,1}, k ∈ Ω \
 p = Probability of k=1 (0 ≤ p ≤ 1)
 
-The formula of the PDF is
+The formula of the PDF is the following
 
-![image](https://user-images.githubusercontent.com/78324346/139028670-0b747696-9adf-4814-ba2a-270ebe6ce7b4.png)
-
+![image](https://user-images.githubusercontent.com/78324346/139200755-266a1134-9e92-4c1d-87c2-77003ae4ab77.png)
 
 To generate this distribution can be used the inverse trasformation generating u = U(0,1) and if u ≤ p then return 0, otherwise return 1.
 A possible code to generate a random value from the Bernoulli distribution could be the one below.
@@ -49,6 +48,10 @@ The Binomial distribution, with parameters n and p, is the discrete probability 
 The PDF of this distribution is the following:
 
 ![image](https://user-images.githubusercontent.com/78324346/139126221-22b8c52c-f30b-48af-9572-75127caf49dc.png)
+
+The formula of the PDF is the followingù
+
+![image](https://user-images.githubusercontent.com/78324346/139200850-83bcf06d-464d-4888-a79d-f5781cf61cf6.png)
 
 The parameters of this distributions are:\
 Ω = {0,1, ...., n}, x ∈ Ω \
@@ -71,13 +74,12 @@ The PDF of this distribution is the following:
 
 The formula of the PDF is:
 
- ![image](https://user-images.githubusercontent.com/78324346/139025878-f632f54a-20e2-4176-a68a-8c9a676557af.png)
+![image](https://user-images.githubusercontent.com/78324346/139200955-2c61bf0c-9705-440d-b33c-38f706a48d92.png)
 
 To generate this distribution can be used the inverse transformation method. \
 Compute the CDF F(x) for x = 0, 1, 2, . . . up to a suitable cutoff and store in an array. For each Poisson random variable, generate a u = U(0,1), and search the array to find x such that F(x) ≤ u < F(x + 1), then return x. \
 The formula of the CDF needed for this algorithm is\
-![image](https://user-images.githubusercontent.com/78324346/139126071-05e878eb-8016-4b64-9431-8c2820c65611.png)
-
+![image](https://user-images.githubusercontent.com/78324346/139201018-b8133a52-042e-42e7-98e5-5ee9d8520232.png)
 
 #### Continuous distributions
 
