@@ -56,7 +56,7 @@ The formula of the PDF is the following:
 The parameters of this distributions are:\
 Ω = {0,1, ...., n}, x ∈ Ω \
 p = Probability of success in a trial, 0 < p < 1\
-n = Number of trials, n must be a positive integer\
+n = Number of trials, n must be a positive integer
 
 To generate this distribution can be used the inverse transformation method. \
 Compute the CDF F(x) for x = 0, 1, 2, . . ., n and store in an array. For each binomial variate, generate a U(0,1) variate u and search the array to find x so that F(x) ≤ u < F(x + 1) and finally return x. \
