@@ -66,7 +66,7 @@ The formula of the CDF needed for this algorithm is \
 • ***Poisson distribution***\
 The Poisson binomial distribution is the discrete probability distribution of a sum of independent Bernoulli trials that are not necessarily identically distributed.
 
-The parameter of this distribution are: \
+The parameters of this distribution are: \
  Ω = {0, 1, 2, . . . , ∞}, x ∈ Ω, λ = Mean (λ > 0) \
 The PDF of this distribution is the following:
 
@@ -83,19 +83,65 @@ The formula of the CDF needed for this algorithm is\
 
 #### Continuous distributions
 
-• ***Gamma distribution*** \
-
-• ***Beta distribution*** \
-
 • ***Uniform distribution*** \
+The continuous uniform distribution is a family of symmetric probability distributions. The distribution describes an experiment where there is an arbitrary outcome that lies between certain bounds. The bounds are defined by the parameters, a and b, which are the minimum and maximum values. The interval can either be closed or open. Therefore, the distribution is often abbreviated U (a, b), where U stands for uniform distribution.
+
+The parameters of this distribution are: \
+a = Lower limit \
+b = Upper limit, b > a \
+The PDF of this distribution is the following: 
+
+![image](https://user-images.githubusercontent.com/78324346/139201535-7dcd869e-c81f-424a-a189-12285d267628.png)
+
+The formula of the PDF is:
+
+![image](https://user-images.githubusercontent.com/78324346/139202084-ffeaea51-4017-445c-ab4a-3d2c3508effe.png)
+
+To generate U(a, b), generate u = U(0, 1) and return a + (b − a)*u.
 
 • ***Exponential distribution*** \
+The exponential distribution is the probability distribution of the time between events in a Poisson point process, i.e., a process in which events occur continuously and independently at a constant average rate.
+
+The parameters of this distribution are: \
+a = Scale parameter = Mean, a > 0 \
+The PDF of this distribution is the following:
+
+![image](https://user-images.githubusercontent.com/78324346/139202660-26fe3b72-2518-4561-a2c9-f82773f7d1f8.png)
+
+The formula of the PDF is:
+
+![image](https://user-images.githubusercontent.com/78324346/139202974-50f2fef5-00d0-417b-b488-6c471f5a0008.png)
+
+To generate this distribution can be used the inverse transformation method. \
+Generate a u = U(0,1) and return −a*ln(u) as Exp(a).
 
 • ***Normal distribution*** \
+In probability theory, a normal distribution is a type of continuous probability distribution for a real-valued random variable. Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known.
+
+The parameters of this distribution are: \
+µ = Mean\
+σ = Standard deviation, σ > 0\
+The PDF of this distribution is the following:
+
+![image](https://user-images.githubusercontent.com/78324346/139203695-ff545bb3-f629-45bf-a421-d7797c630d51.png)
+
+The formula of the PDF is:
+
+![image](https://user-images.githubusercontent.com/78324346/139204024-90912729-a8f7-4383-874a-235aecf800e3.png)
+
+This distribution can be generated using the sum of a large number of uniform uᵢ = U(0, 1):
+
+![image](https://user-images.githubusercontent.com/78324346/139204444-3e50b991-1f9a-4983-af89-4793b1374db3.png)
+
+Generally, n = 12 is used.
+
 
 [1][https://www.cse.wustl.edu/~jain/books/ftp/ch5f_slides.pdf](https://www.cse.wustl.edu/~jain/books/ftp/ch5f_slides.pdf) \
 [2][https://en.wikipedia.org/wiki/Bernoulli_distribution](https://en.wikipedia.org/wiki/Bernoulli_distribution) \
 [3][https://en.wikipedia.org/wiki/Binomial_distribution](https://en.wikipedia.org/wiki/Binomial_distribution)\
 [4][https://en.wikipedia.org/wiki/Poisson_binomial_distribution](https://en.wikipedia.org/wiki/Poisson_binomial_distribution) \
 [5][https://en.wikipedia.org/wiki/Discrete_uniform_distribution](https://en.wikipedia.org/wiki/Discrete_uniform_distribution) \
-[6][https://www.sciencedirect.com/topics/mathematics/discrete-uniform-distribution](https://www.sciencedirect.com/topics/mathematics/discrete-uniform-distribution)
+[6][https://www.sciencedirect.com/topics/mathematics/discrete-uniform-distribution](https://www.sciencedirect.com/topics/mathematics/discrete-uniform-distribution) \
+[7][https://en.wikipedia.org/wiki/Continuous_uniform_distribution](https://en.wikipedia.org/wiki/Continuous_uniform_distribution) \
+[8][https://en.wikipedia.org/wiki/Exponential_distribution](https://en.wikipedia.org/wiki/Exponential_distribution) \
+[9][https://en.wikipedia.org/wiki/Normal_distribution](https://en.wikipedia.org/wiki/Normal_distribution)
