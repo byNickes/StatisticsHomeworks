@@ -49,7 +49,7 @@ The PDF of this distribution is the following:
 
 ![image](https://user-images.githubusercontent.com/78324346/139126221-22b8c52c-f30b-48af-9572-75127caf49dc.png)
 
-The formula of the PDF is the followingù
+The formula of the PDF is the following:
 
 ![image](https://user-images.githubusercontent.com/78324346/139200850-83bcf06d-464d-4888-a79d-f5781cf61cf6.png)
 
