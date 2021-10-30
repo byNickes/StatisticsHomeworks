@@ -5,3 +5,4 @@
 ## [Homework 2](https://bynickes.github.io/StatisticsHomeworks/homework2)
 ## [Homework 3](https://bynickes.github.io/StatisticsHomeworks/homework3)
 ## [Homework 4](https://bynickes.github.io/StatisticsHomeworks/homework4)
+## [Homework 5](https://bynickes.github.io/StatisticsHomeworks/homework5)
