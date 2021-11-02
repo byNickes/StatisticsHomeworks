@@ -25,61 +25,40 @@ Time Complexity to insert element in a heap is logn. So to insert n element is O
 
 Let's see now an implementation for computing the running median using two heaps.
 
-{% highlight Java %}
-    public double findMedianSortedArrays(int input1[], int input2[]) {
-        //if input1 length is greater than switch them so that input1 is smaller than input2.
-        if (input1.length > input2.length) {
-            return findMedianSortedArrays(input2, input1);
-        }
-        int x = input1.length;
-        int y = input2.length;
+{% highlight C# %}
+class RunningMedian
+{
+    MaxHeap<double> max_heap;
+    MinHeap<double> min_heap;
 
-        int low = 0;
-        int high = x;
-        while (low <= high) {
-            int partitionX = (low + high)/2;
-            int partitionY = (x + y + 1)/2 - partitionX;
-
-            //if partitionX is 0 it means nothing is there on left side. Use -INF for maxLeftX
-            //if partitionX is length of input then there is nothing on right side. Use +INF for minRightX
-            int maxLeftX = (partitionX == 0) ? Integer.MIN_VALUE : input1[partitionX - 1];
-            int minRightX = (partitionX == x) ? Integer.MAX_VALUE : input1[partitionX];
-
-            int maxLeftY = (partitionY == 0) ? Integer.MIN_VALUE : input2[partitionY - 1];
-            int minRightY = (partitionY == y) ? Integer.MAX_VALUE : input2[partitionY];
-
-            if (maxLeftX <= minRightY && maxLeftY <= minRightX) {
-                //We have partitioned array at correct place
-                // Now get max of left elements and min of right elements to get the median in case of even length combined array size
-                // or get max of left for odd length combined array size.
-                if ((x + y) % 2 == 0) {
-                    return ((double)Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY))/2;
-                } else {
-                    return (double)Math.max(maxLeftX, maxLeftY);
-                }
-            } else if (maxLeftX > minRightY) { //we are too far on right side for partitionX. Go on left side.
-                high = partitionX - 1;
-            } else { //we are too far on left side for partitionX. Go on right side.
-                low = partitionX + 1;
-            }
-        }
-
-        //Only we we can come here is if input arrays were not sorted. Throw in that scenario.
-        throw new IllegalArgumentException();
+    public RunningMedian(){
+        max_heap = new MaxHeap<double>();
+        min_heap = new MinHeap<double>();
     }
 
-    public static void main(String[] args) {
-        int[] x = {1, 3, 8, 9, 15};
-        int[] y = {7, 11, 19, 21, 18, 25};
+    public void AddValue(double value)
+    {
+        max_heap.Add(value);
+        min_heap.Add(max_heap.ExtractMax());
+        if (max_heap.Count < min_heap.Count) max_heap.Add(min_heap.ExtractMin());
+    }
 
-        MedianOfTwoSortedArrayOfDifferentLength mm = new MedianOfTwoSortedArrayOfDifferentLength();
-        mm.findMedianSortedArrays(x, y);
+    public double GetMedian()
+    {
+        if (max_heap.Count > min_heap.Count) return max_heap.GetMax();
+        else
+        {
+            double max = max_heap.GetMax();
+            double min = min_heap.GetMin();
+
+            return (min + max) / 2;
+        }
     }
 }
 {% endhighlight %}
 
-
+To implement this solution the max heap and min heap implementation has been got by [this GitHub page](https://github.com/JetStream96/MinMaxHeap) while the RunningMedian class has been made by the writer.
 
 [1][https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers) \
 [2][https://en.wikipedia.org/wiki/Median](https://en.wikipedia.org/wiki/Median) \
-[3][https://github.com/mission-peace/interview/blob/master/src/com/interview/binarysearch/MedianOfTwoSortedArrayOfDifferentLength.java](https://github.com/mission-peace/interview/blob/master/src/com/interview/binarysearch/MedianOfTwoSortedArrayOfDifferentLength.java)
+[3][https://www.youtube.com/watch?v=EIm2n8iPA4I&t=174s](https://www.youtube.com/watch?v=EIm2n8iPA4I&t=174s)
