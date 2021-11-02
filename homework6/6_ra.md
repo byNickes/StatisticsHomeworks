@@ -62,6 +62,11 @@ class RunningMedian
 {% endhighlight %}
 
 To make this solution the max heap and min heap implementation have been got by [this GitHub page](https://github.com/JetStream96/MinMaxHeap) while the RunningMedian class has been made by the writer of this article.
+    
+A little demo can be seen in the next video and can be downloaded [pressing this link](https://drive.google.com/file/d/12AgS-Jhun2Ae9FmaFn6VUB2UAFsQkG6_/view?usp=sharing).
+    
+The video of the whole application can be found below.
+<iframe src="https://user-images.githubusercontent.com/78324346/139830359-c3cc52e0-1944-4c6b-831f-8e089d1ef29c.mp4" width="700" height="480" frameborder="0" allowfullscreen=""> </iframe>
 
 [1][https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers) \
 [2][https://en.wikipedia.org/wiki/Median](https://en.wikipedia.org/wiki/Median) \
