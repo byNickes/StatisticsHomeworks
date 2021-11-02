@@ -19,8 +19,12 @@ If the left and right subtrees contain same number of elements, the root node ho
 Self-balancing BST is costly in managing the balancing factor of BST. However, they provide sorted data which we don’t need. We need median only.
 
 **Method using two Heaps** \
-Similar to balancing BST in, we can use a max heap on the left side to represent elements that are less than effective median, and a min-heap on the right side to represent elements that are greater than effective median.
-After processing an incoming element, the number of elements in heaps differs utmost by 1 element. When both heaps contain the same number of elements, we pick the average of heaps root data as effective median. When the heaps are not balanced, we select effective median from the root of the heap containing more elements. \
+Similar to balancing BST in, we can use a max heap to represent elements that are less than effective median, and a min-heap to represent elements that are greater than effective median. \
+The steps to follow to implement this method are the following: \
+**Step 1:** Add the new value of the stream to the max heap.\
+**Step 2:** Remove the top of max heap and add it to the min heap.\
+**Step 3:** If the max heap size is less than min heap than remove the top of min heap and add it to the max heap.\
+**Step 4:** For finding the median: if the size of max heap is greater than min heap then peek the top of max heap. If both max heap and min heap are same size than peek the top of max heap and min heap, add both and divide it by 2.\
 Time Complexity to insert element in a heap is logn. So to insert n element is O(n*logn). This one is the most efficient between the three methods presented.
 
 Let's see now an implementation for computing the running median using two heaps.
@@ -57,7 +61,7 @@ class RunningMedian
 }
 {% endhighlight %}
 
-To implement this solution the max heap and min heap implementation has been got by [this GitHub page](https://github.com/JetStream96/MinMaxHeap) while the RunningMedian class has been made by the writer.
+To make this solution the max heap and min heap implementation has been got by [this GitHub page](https://github.com/JetStream96/MinMaxHeap) while the RunningMedian class has been made by the writer of this article.
 
 [1][https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers/](https://www.geeksforgeeks.org/median-of-stream-of-integers-running-integers) \
 [2][https://en.wikipedia.org/wiki/Median](https://en.wikipedia.org/wiki/Median) \
