@@ -61,7 +61,7 @@ class RunningMedian
 }
 {% endhighlight %}
 
-To make this solution the max heap and min heap implementation have been got by [this GitHub page](https://github.com/JetStream96/MinMaxHeap) while the RunningMedian class has been made by the writer of this article.
+To make this solution the max heap and min heap implementations have been got by [this GitHub page](https://github.com/JetStream96/MinMaxHeap) while the RunningMedian class has been made by the writer of this article.
     
 A little demo can be seen in the next video and can be downloaded [pressing this link](https://drive.google.com/file/d/12AgS-Jhun2Ae9FmaFn6VUB2UAFsQkG6_/view?usp=sharing).
     
