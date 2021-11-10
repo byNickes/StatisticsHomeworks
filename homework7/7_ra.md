@@ -72,6 +72,9 @@ So it stands that whatever is the distribution of Xi, the distribution of the va
 This concept can be seen practically in the application 9_A_2.\
 When the simple walk is plotted we have that the distribution of the values is converging more and more to a distribution N(0,1) which is the same distribution of the values of the standard Brownian motion plotted in the second part of the video shown in the presentation of the application.
 
+For the simple random walk, as already said before, for each instant t we have E Sₜ = 0 and Var Sₜ= t and they are equal to the variance and expected value of the standard Brownian motion.
+
+
 [1][https://en.wikipedia.org/wiki/Random_walk](https://en.wikipedia.org/wiki/Random_walk) \
 [2][http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf](http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf) \
 [3][https://en.wikipedia.org/wiki/Markov_chain](https://en.wikipedia.org/wiki/Markov_chain) \
