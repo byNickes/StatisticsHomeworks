@@ -26,7 +26,7 @@ A reasonable way to approach this problem is to suppose there are x million Mich
 
 ![image](https://user-images.githubusercontent.com/78324346/141070356-bb9260b0-56ae-42d2-8d40-4756a4b0d0d6.png)
 
-Rearranging either equation, x = (5/3)*y. Since x+y=10, y = (3/8)*10 = 3.75 and x = 6.25. So there are 6.25 million Michigan fans and 3.75 million Michigan state fans. In other words, the stationary distribution is (0.625, 0.375).
+Rearranging either equation, x = (5/3)y. Since x+y=10, y = (3/8)10 = 3.75 and x = 6.25. So there are 6.25 million Michigan fans and 3.75 million Michigan state fans. In other words, the stationary distribution is (0.625, 0.375).
 
 
 **Hitting time** \
