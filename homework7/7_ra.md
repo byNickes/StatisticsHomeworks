@@ -25,7 +25,7 @@ so E Xₜ = 0 and Var Xₜ = 1 (t = 1,2,...)
 
 The index t indicates a point in time. Feller uses the term epoch to denote a particular
 moment t, and reserves the use of the word “time” to refer to a duration or interval of time,
-rather than a point in time. The set of epochs is the set {0,1,2,...} of non negative integers.\
+rather than a point in time. The set of epochs is the set {0,1,2,...} of non negative integers.
 
 For each t, is defined the running sum as Sₜ = X₁ + · · · + Xₜ and S0 = 0.\
 It follows that for each Sₜ:
@@ -44,13 +44,13 @@ Talking about the asymptotics of this random walk we have that:
 
 ![image](https://user-images.githubusercontent.com/78324346/141074012-72e0db2f-674f-467c-ab06-a2b6d79d2a01.png)
 
-#### Random walk from Normal Distribution (or Gaussian random walk)
+#### Random walk from Normal Distribution (or Standard Brownian motion)
 This is a random walk where the random values are drawn from a normal probability distribution with mean μ = 0 and unit standard deviation σ = 1. \
 So let's consider the following random walk
 
 ![image](https://user-images.githubusercontent.com/78324346/141076647-57b55e9d-61dc-4152-a724-47b05b12d284.png)
 
-in which each dₜ is a IID Normal random variable with mean 0 and variance 1. We know that each xₙ is Normal with mean 0 and variance σ² = n.\
+in which each dₜ is a IID Normal random variable with mean 0 and variance 1. We know that each xₙ is Normal with mean 0 and variance σ² = n.
 
 ### Compare your finding with your applications drawing your personal conclusions. Explain based on your exercise the beaviour of the distribution of the stochastic process (check out "Donsker's invariance principle"). What are, in particular, its mean and variance at time n?
 We have the Donsker's theorem (also known as Donsker's invariance principle), it is a functional extension of the central limit theorem. \
@@ -65,7 +65,7 @@ We can define the stochastic process  S = Sₙ where n ∈ N is known as a rando
 
 ![image](https://user-images.githubusercontent.com/78324346/141084609-821a4e33-6bef-4eeb-a3b1-f2ba90a76372.png)
 
-Donker's invariance principale states that the random function W⁽ⁿ⁾ converges in distribution to a standard Brownian motion W as n -> ∞.
+Donker's invariance principle states that the random function W⁽ⁿ⁾ converges in distribution to a standard Brownian motion W as n -> ∞.
 
 So it stands that, whatever is the distribution of Xᵢ, the distribution of the values acquired by W⁽ⁿ⁾ will be the same as the distribution of the values of a standard Brownian motion if n -> ∞.
 
