@@ -14,6 +14,21 @@ A Markov chain or Markov process is a stochastic model describing a sequence of 
 There are numerous properties of random walks that we may be interested in. They are listed and defined below.
 
 **Stationary distribution** \
+A stationary distribution of a Markov chain is a probability distribution that remains unchanged in the Markov chain as time progresses. Typically, it is represented as a row vector π whose entries are probabilities summing to 1, and given transition matrix P, it satisfies
+
+![image](https://user-images.githubusercontent.com/78324346/141069829-3ad727e6-30f5-4ae6-ab3f-572b50eeeca2.png)
+
+Below follows an exampleof stationary distribution:
+
+A sports broadcaster wishes to predict how many Michigan residents prefer University of Michigan teams (known more succinctly as "Michigan") and how many prefer Michigan State teams. She noticed that, year after year, most people stick with their preferred team; however, about 3% of Michigan fans switch to Michigan State, and about 5% of Michigan State fans switch to Michigan. However, there is no noticeable difference in the state's population of 10 million's preference at large; in other words, it seems Michigan sports fans have reached a stationary distribution. What might that be?
+
+A reasonable way to approach this problem is to suppose there are x million Michigan fans and y million Michigan State fans. The state's population is 10 million, so x + y = 10. These numbers do not change each year. It follows that
+
+![image](https://user-images.githubusercontent.com/78324346/141070356-bb9260b0-56ae-42d2-8d40-4756a4b0d0d6.png)
+
+Rearranging either equation, x = (5/3)*y. Since x+y=10, y = (3/8)*10 = 3.75 and x = 6.25. So there are 6.25 million Michigan fans and 3.75 million Michigan state fans. In other words, the stationary distribution is (0.625, 0.375).
+
+
 **Hitting time** \
 **Commute time** \
 **Cover time**
@@ -25,4 +40,5 @@ There are numerous properties of random walks that we may be interested in. They
 
 [1][https://en.wikipedia.org/wiki/Random_walk](https://en.wikipedia.org/wiki/Random_walk) \
 [2][http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf](http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf) \
-[3][https://en.wikipedia.org/wiki/Markov_chain](https://en.wikipedia.org/wiki/Markov_chain)
+[3][https://en.wikipedia.org/wiki/Markov_chain](https://en.wikipedia.org/wiki/Markov_chain) \
+[4][https://brilliant.org/wiki/stationary-distributions/](https://brilliant.org/wiki/stationary-distributions/)
