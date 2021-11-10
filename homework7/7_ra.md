@@ -61,7 +61,7 @@ Let Sₙ be as follows:
 
 ![image](https://user-images.githubusercontent.com/78324346/141084374-a0c5fc50-445f-43e6-a727-fa014587b056.png)
 
-The stochastic process S = Sₙ where n ∈ N is known as a random walk. We define the diffusively rescaled random walk as
+We can define the stochastic process  S = Sₙ where n ∈ N is known as a random walk. We define the diffusively rescaled random walk as
 
 ![image](https://user-images.githubusercontent.com/78324346/141084609-821a4e33-6bef-4eeb-a3b1-f2ba90a76372.png)
 
