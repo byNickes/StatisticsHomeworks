@@ -4,34 +4,38 @@
 ### Do a research about the random walk process and its properties.
 In mathematics, a random walk is a mathematical object, known as a stochastic or random process, that describes a path that consists of a succession of random steps on some mathematical space such as the integers.
 
-An elementary example of a random walk is the random walk on the integer number line which starts at 0 and at each step moves +1 or −1 with equal probability.\
 In the simplest context the walk is in discrete time, that is a sequence of random variables (Xₜ) = (X₁, X₂, ...) indexed by the natural numbers. However, it is also possible to define random walks which take their steps at random times, and in that case, the position X
 t has to be defined for all times t ∈ [0,+∞).
 
-Various types of random walks are of interest, which can differ in several ways. The term itself most often refers to a special category of Markov chains but many time-dependent processes are referred to as random walks, with a modifier indicating their specific properties. \
-A Markov chain or Markov process is a stochastic model describing a sequence of possible events in which the probability of each event depends only on the state attained in the previous event.
+Various types of random walks are of interest, which can differ in several ways. Let's see two of them.
 
-There are numerous properties of random walks that we may be interested in. They are listed and defined below.
+##### Simple random walk
+Let X₁,..., Xₜ,... be a sequence of independent Rademacher random variables
 
-**Stationary distribution** \
-A stationary distribution of a Markov chain is a probability distribution that remains unchanged in the Markov chain as time progresses. Typically, it is represented as a row vector π whose entries are probabilities summing to 1, and given transition matrix P, it satisfies
+![image](https://user-images.githubusercontent.com/78324346/141072631-9d05e4fa-cafc-45a4-b1fb-f61699b3163e.png)
 
-![image](https://user-images.githubusercontent.com/78324346/141069829-3ad727e6-30f5-4ae6-ab3f-572b50eeeca2.png)
+so E Xₜ = 0 and Var Xₜ = 1 (t = 1,2,...)
 
-Below follows an exampleof stationary distribution:
+The index t indicates a point in time. Feller uses the term epoch to denote a particular
+moment t, and reserves the use of the word “time” to refer to a duration or interval of time,
+rather than a point in time. The set of epochs is the set {0,1,2,...} of non negative integers.\
 
-A sports broadcaster wishes to predict how many Michigan residents prefer University of Michigan teams (known more succinctly as "Michigan") and how many prefer Michigan State teams. She noticed that, year after year, most people stick with their preferred team; however, about 3% of Michigan fans switch to Michigan State, and about 5% of Michigan State fans switch to Michigan. However, there is no noticeable difference in the state's population of 10 million's preference at large; in other words, it seems Michigan sports fans have reached a stationary distribution. What might that be?
+For each t, is defined the running sum as Sₜ = X₁ + · · · + Xₜ and S0 = 0.\
+It follows that for each Sₜ:
 
-A reasonable way to approach this problem is to suppose there are x million Michigan fans and y million Michigan State fans. The state's population is 10 million, so x + y = 10. These numbers do not change each year. It follows that
+E Sₜ = 0 and Var Sₜ = t.
 
-![image](https://user-images.githubusercontent.com/78324346/141070356-bb9260b0-56ae-42d2-8d40-4756a4b0d0d6.png)
+The sequence of random variables S₀, . . . , Sₜ, . . .  where t ∈ {0,1,2,...} is a discrete-time stochastic process known as the simple random walk on the integers.
 
-Rearranging either equation, x = (5/3)y. Since x+y=10, y = (3/8)10 = 3.75 and x = 6.25. So there are 6.25 million Michigan fans and 3.75 million Michigan state fans. In other words, the stationary distribution is (0.625, 0.375).
+Talking about the asymptotics of this random walk we have that:
 
+**1-** The Strong Law of Large Numbers tells us that
 
-**Hitting time** \
-**Commute time** \
-**Cover time**
+![image](https://user-images.githubusercontent.com/78324346/141073950-9125a13b-4010-42d5-8ed2-03e13e6dde5c.png)
+
+**2-** The Central Limit Theorem tells us that
+
+![image](https://user-images.githubusercontent.com/78324346/141074012-72e0db2f-674f-467c-ab06-a2b6d79d2a01.png)
 
 
 ### Compare your finding with your applications drawing your personal conclusions.
@@ -41,4 +45,5 @@ Rearranging either equation, x = (5/3)y. Since x+y=10, y = (3/8)10 = 3.75 and x 
 [1][https://en.wikipedia.org/wiki/Random_walk](https://en.wikipedia.org/wiki/Random_walk) \
 [2][http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf](http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf) \
 [3][https://en.wikipedia.org/wiki/Markov_chain](https://en.wikipedia.org/wiki/Markov_chain) \
-[4][https://brilliant.org/wiki/stationary-distributions/](https://brilliant.org/wiki/stationary-distributions/)
+[4][https://brilliant.org/wiki/stationary-distributions/](https://brilliant.org/wiki/stationary-distributions/)\
+[5][http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf](http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf)
