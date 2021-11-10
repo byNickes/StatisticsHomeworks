@@ -7,6 +7,13 @@ In mathematics, a random walk is a mathematical object, known as a stochastic or
 In the simplest context the walk is in discrete time, that is a sequence of random variables (Xₜ) = (X₁, X₂, ...) indexed by the natural numbers. However, it is also possible to define random walks which take their steps at random times, and in that case, the position X
 t has to be defined for all times t ∈ [0,+∞).
 
+A natural way to think about the random walk is in term of paths. The outcome path s =
+(s1, s2, . . .) can be identified with the sequence (t, st), t = 0, 1, . . . of ordered pairs, or better yet with the graph of the piecewise linear function that connects the points (t, st) as shown in the next figure.
+
+![image](https://user-images.githubusercontent.com/78324346/141074983-cfe6a37d-eedf-44bd-ba99-d4ae0ea75fb9.png)
+
+Of those paths there are infinite.
+
 Various types of random walks are of interest, which can differ in several ways. Let's see two of them.
 
 ##### Simple random walk
@@ -37,6 +44,18 @@ Talking about the asymptotics of this random walk we have that:
 
 ![image](https://user-images.githubusercontent.com/78324346/141074012-72e0db2f-674f-467c-ab06-a2b6d79d2a01.png)
 
+#### Random walk from Normal Distribution (or Brownian motion)
+This is a random walk where the random values are drawn from a normal probability distribution with mean μ = 0 and unit standard deviation σ = 1. \
+So let's consider the following random walk
+
+![image](https://user-images.githubusercontent.com/78324346/141076647-57b55e9d-61dc-4152-a724-47b05b12d284.png)
+
+in which dt are IID Normal with mean 0 and variance 1. We know that each xn is Normal with mean 0 and variance σ^2 = n.\
+As a function of n, the probability densities boraden as n increases without changing their shape.
+
+Sinche σ = (n)^1/2 is a measure of the deviation of x from its mean 0, then the size of xn is O((n)^1/2). So we have added together n terms di, each of which is O(1), but the result is not of size O(n) but rather O((n)^1/2). This is due to cancelations of the di since they come with both positive and negative values. This cancelation is the hearth of the Central Limit Theorem.
+
+
 
 ### Compare your finding with your applications drawing your personal conclusions.
 
@@ -46,4 +65,6 @@ Talking about the asymptotics of this random walk we have that:
 [2][http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf](http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf) \
 [3][https://en.wikipedia.org/wiki/Markov_chain](https://en.wikipedia.org/wiki/Markov_chain) \
 [4][https://brilliant.org/wiki/stationary-distributions/](https://brilliant.org/wiki/stationary-distributions/)\
-[5][http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf](http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf)
+[5][http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf](http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf) \
+[6][https://people.revoledu.com/kardi/tutorial/StochasticProcess/RandomWalk/Normally-Distributed-Random-Walk.html](https://people.revoledu.com/kardi/tutorial/StochasticProcess/RandomWalk/Normally-Distributed-Random-Walk.html) \
+[7][https://www.math.ucla.edu/~caflisch/181.1.03f/Lect4-5.pdf](https://www.math.ucla.edu/~caflisch/181.1.03f/Lect4-5.pdf)
