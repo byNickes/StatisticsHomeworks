@@ -44,7 +44,7 @@ Talking about the asymptotics of this random walk we have that:
 
 ![image](https://user-images.githubusercontent.com/78324346/141074012-72e0db2f-674f-467c-ab06-a2b6d79d2a01.png)
 
-#### Random walk from Normal Distribution (or Brownian motion)
+#### Random walk from Normal Distribution
 This is a random walk where the random values are drawn from a normal probability distribution with mean μ = 0 and unit standard deviation σ = 1. \
 So let's consider the following random walk
 
