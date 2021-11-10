@@ -56,18 +56,18 @@ in which each dₜ is a IID Normal random variable with mean 0 and variance 1. W
 We have the Donsker's theorem (also known as Donsker's invariance principle), it is a functional extension of the central limit theorem. \
 It says the following:
 
-Let X1,X2,X3,... be a sequence of independent and identically distributed random variables with mean 0.
-Let Sn be as follows:
+Let X₁,X₂,X₃,... be a sequence of independent and identically distributed random variables with mean 0.
+Let Sₙ be as follows:
 
 ![image](https://user-images.githubusercontent.com/78324346/141084374-a0c5fc50-445f-43e6-a727-fa014587b056.png)
 
-The stochastic process S= Sn with n e N is known as a random walk. We define the diffusively rescaled random walk as
+The stochastic process S = Sₙ where n ∈ N is known as a random walk. We define the diffusively rescaled random walk as
 
 ![image](https://user-images.githubusercontent.com/78324346/141084609-821a4e33-6bef-4eeb-a3b1-f2ba90a76372.png)
 
-Donker's invariance principale states that the rando function W(n) converges in distribution to a standard Brownian motion W as n -> infinito.
+Donker's invariance principale states that the random function W⁽ⁿ⁾ converges in distribution to a standard Brownian motion W as n -> ∞.
 
-So it stands that whatever is the distribution of Xi, the distribution of the values acquired by W(n) will be the same as the distribution of the values of a standard Brownian motion if n -> infinito.
+So it stands that whatever is the distribution of Xi, the distribution of the values acquired by W(n) will be the same as the distribution of the values of a standard Brownian motion if n -> ∞.
 
 This concept can be seen practically in the application 9_A_2.\
 When the simple walk is plotted we have that the distribution of the values is converging more and more to a distribution N(0,1) which is the same distribution of the values of the standard Brownian motion plotted in the second part of the video shown in the presentation of the application.
