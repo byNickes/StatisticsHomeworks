@@ -44,23 +44,17 @@ Talking about the asymptotics of this random walk we have that:
 
 ![image](https://user-images.githubusercontent.com/78324346/141074012-72e0db2f-674f-467c-ab06-a2b6d79d2a01.png)
 
-#### Random walk from Normal Distribution
+#### Random walk from Normal Distribution (or Gaussian random walk)
 This is a random walk where the random values are drawn from a normal probability distribution with mean μ = 0 and unit standard deviation σ = 1. \
 So let's consider the following random walk
 
 ![image](https://user-images.githubusercontent.com/78324346/141076647-57b55e9d-61dc-4152-a724-47b05b12d284.png)
 
 in which each dₜ is a IID Normal random variable with mean 0 and variance 1. We know that each xₙ is Normal with mean 0 and variance σ² = n.\
-As a function of n, the probability densities boraden as n increases without changing their shape.
 
-Sinche σ = √n is a measure of the deviation of x from its mean 0, then the size of xₙ is O(√n). So we have added together n terms, each of which is O(1), but the result is not of size O(n) but rather O(√n). This is due to cancelations of the di since they come with both positive and negative values. This cancelation is the hearth of the Central Limit Theorem.
-
+### Compare your finding with your applications drawing your personal conclusions. Explain based on your exercise the beaviour of the distribution of the stochastic process (check out "Donsker's invariance principle"). What are, in particular, its mean and variance at time n?
 
 
-### Compare your finding with your applications drawing your personal conclusions.
-
-
-### Explain based on your exercise the beaviour of the distribution of the stochastic process (check out "Donsker's invariance principle"). What are, in particular, its mean and variance at time n ?
 
 [1][https://en.wikipedia.org/wiki/Random_walk](https://en.wikipedia.org/wiki/Random_walk) \
 [2][http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf](http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf) \
@@ -68,4 +62,5 @@ Sinche σ = √n is a measure of the deviation of x from its mean 0, then the si
 [4][https://brilliant.org/wiki/stationary-distributions/](https://brilliant.org/wiki/stationary-distributions/)\
 [5][http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf](http://www.math.caltech.edu/~2016-17/2term/ma003/Notes/Lecture16.pdf) \
 [6][https://people.revoledu.com/kardi/tutorial/StochasticProcess/RandomWalk/Normally-Distributed-Random-Walk.html](https://people.revoledu.com/kardi/tutorial/StochasticProcess/RandomWalk/Normally-Distributed-Random-Walk.html) \
-[7][https://www.math.ucla.edu/~caflisch/181.1.03f/Lect4-5.pdf](https://www.math.ucla.edu/~caflisch/181.1.03f/Lect4-5.pdf)
+[7][https://www.math.ucla.edu/~caflisch/181.1.03f/Lect4-5.pdf](https://www.math.ucla.edu/~caflisch/181.1.03f/Lect4-5.pdf) \
+[8][https://en.wikipedia.org/wiki/Donsker%27s_theorem](https://en.wikipedia.org/wiki/Donsker%27s_theorem)
