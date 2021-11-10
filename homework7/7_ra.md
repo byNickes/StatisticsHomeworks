@@ -53,8 +53,24 @@ So let's consider the following random walk
 in which each dₜ is a IID Normal random variable with mean 0 and variance 1. We know that each xₙ is Normal with mean 0 and variance σ² = n.\
 
 ### Compare your finding with your applications drawing your personal conclusions. Explain based on your exercise the beaviour of the distribution of the stochastic process (check out "Donsker's invariance principle"). What are, in particular, its mean and variance at time n?
+We have the Donsker's theorem (also known as Donsker's invariance principle), it is a functional extension of the central limit theorem. \
+It says the following:
 
+Let X1,X2,X3,... be a sequence of independent and identically distributed random variables with mean 0.
+Let Sn be as follows:
 
+![image](https://user-images.githubusercontent.com/78324346/141084374-a0c5fc50-445f-43e6-a727-fa014587b056.png)
+
+The stochastic process S= Sn with n e N is known as a random walk. We define the diffusively rescaled random walk as
+
+![image](https://user-images.githubusercontent.com/78324346/141084609-821a4e33-6bef-4eeb-a3b1-f2ba90a76372.png)
+
+Donker's invariance principale states that the rando function W(n) converges in distribution to a standard Brownian motion W as n -> infinito.
+
+So it stands that whatever is the distribution of Xi, the distribution of the values acquired by W(n) will be the same as the distribution of the values of a standard Brownian motion if n -> infinito.
+
+This concept can be seen practically in the application 9_A_2.\
+When the simple walk is plotted we have that the distribution of the values is converging more and more to a distribution N(0,1) which is the same distribution of the values of the standard Brownian motion plotted in the second part of the video shown in the presentation of the application.
 
 [1][https://en.wikipedia.org/wiki/Random_walk](https://en.wikipedia.org/wiki/Random_walk) \
 [2][http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf](http://pages.cs.wisc.edu/~shuchi/courses/787-F07/scribe-notes/lecture27.pdf) \
