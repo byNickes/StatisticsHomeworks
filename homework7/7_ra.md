@@ -67,7 +67,7 @@ We can define the stochastic process  S = Sₙ where n ∈ N is known as a rando
 
 Donker's invariance principale states that the random function W⁽ⁿ⁾ converges in distribution to a standard Brownian motion W as n -> ∞.
 
-So it stands that whatever is the distribution of Xi, the distribution of the values acquired by W(n) will be the same as the distribution of the values of a standard Brownian motion if n -> ∞.
+So it stands that, whatever is the distribution of Xᵢ, the distribution of the values acquired by W⁽ⁿ⁾ will be the same as the distribution of the values of a standard Brownian motion if n -> ∞.
 
 This concept can be seen practically in the application 9_A_2.\
 When the simple walk is plotted we have that the distribution of the values is converging more and more to a distribution N(0,1) which is the same distribution of the values of the standard Brownian motion plotted in the second part of the video shown in the presentation of the application.
