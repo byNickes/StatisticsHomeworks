@@ -7,11 +7,13 @@ In the 11_A application we plotted the paths obtained by summing successions of 
 
 It's possible to see that, the distribution of the sequences of sum of random samples taken by the random variable B(n, λ/n), converges to a Poisson(λ) distribution.\
 The resemblance can be seen below, the first image is a Poisson distribution while the second is the distribution computed in the application.
+
 ![image](https://user-images.githubusercontent.com/78324346/142171641-872f9396-5c42-4008-a826-9dbc500926c3.png)
 
 Regarding the distribution of the distances from origin of each Bernoulli success, we can see that it behaves like an uniform distribution.\
-This can be seen in the next image.
+This can be seen in the next image where is represented what has been computed in the simulator.
 
+![Schermata 2021-11-17 alle 10 19 40](https://user-images.githubusercontent.com/78324346/142173153-5e436cc5-8f1d-454f-9c6b-9cc14622cae8.png)
 
 Considering, instead, the distribution of the consecutive distances between the Bernoulli successes, we can see that the arising distribution looks like a Pascal distribution (or Negative binomial distribution).\
 It's possible to see what just said in the next images, the second one is what has been computed in the simulator.
