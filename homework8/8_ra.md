@@ -10,6 +10,8 @@ The resemblance can be seen below, the first image is a Poisson distribution whi
 
 ![image](https://user-images.githubusercontent.com/78324346/142171641-872f9396-5c42-4008-a826-9dbc500926c3.png)
 
+![image](https://user-images.githubusercontent.com/78324346/142174405-4d0444b6-1255-4a1c-b63d-9f97dfb064b9.png)
+
 Regarding the distribution of the distances from origin of each Bernoulli success, we can see that it behaves like an uniform distribution.\
 This can be seen in the next image where is represented what has been computed in the simulator.
 
