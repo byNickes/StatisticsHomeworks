@@ -8,4 +8,4 @@
 ## [Homework 5](https://bynickes.github.io/StatisticsHomeworks/homework5)
 ## [Homework 6](https://bynickes.github.io/StatisticsHomeworks/homework6)
 ## [Homework 7](https://bynickes.github.io/StatisticsHomeworks/homework7)
-
+## [Homework 8](https://bynickes.github.io/StatisticsHomeworks/homework8)
