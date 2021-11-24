@@ -3,7 +3,7 @@
 ## Research about application(9_RA)
 ### Try to find on the web what are the names of the random variables that you just simulated in the applications, and see if the means and variances that you obtain in the simulation are compatible with the "theory". If not fix the possible bugs.
 Below are listed the names and characteristics of the variables we have computed in the 13_A application.\
-Since in the application mentioned above are already plotted the theoretical mean and variance of each distribution, it's possible to see that the empirical variances and means obtained are all around the theoretical value. So, it's not wrong to say that the computation of the distributions has not errors.
+Since in the application mentioned above are already plotted the theoretical mean and variance of each distribution, it's possible to see that the empirical variances and means obtained are all around the theoretical value. So, it's safe to say that the computation of the distributions has not errors.
 
 We have plotted the following distributions:\
 **1-** exp(N(0,1)) is a log-normal distribution with μ=0 and σ=1.\
