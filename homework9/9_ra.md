@@ -50,7 +50,7 @@ The mean of the distribution is k.
 The variance of the distribution is 2k.
 
 **Beta-prime distribution**\
-The beta prime distribution is an absolutely continuous probability distribution.\
+The beta prime distribution is an absolutely continuous probability distribution.
 
 
 *Generation and parameters*\
