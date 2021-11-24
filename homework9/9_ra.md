@@ -25,7 +25,7 @@ The variance is
 
 ![image](https://user-images.githubusercontent.com/78324346/143195314-ad26a208-78f7-4ae9-81eb-0b4f67f37ae4.png)
 
-**Chi-squared distribution**
+**Chi-squared distribution**\
 The chi-squared distribution with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.
 
 *Generation and parameters*\
